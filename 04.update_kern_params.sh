@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ############################################################################
 #                   ~- Debian 11 baseline hardening -~                     #
 # Update Kernel parameters only to satisfy lynis audits. For CIS Benchmark #
@@ -6,10 +6,10 @@
 # being built for. Please look at kernel parameter tuning guide for Debian #
 # 11_6_0 as this is only baseline hardening guide created on very specific #
 # requirement due to the time constraint on bringing all systems back up   #
-# in a very limited time. Please check with Bhaskar Roy & Rick Torres Jr.  #
-# before making further changes to this.                                   #
-# Author: broy@ibm.com                                                     #
-# Config: /etc/ssh/sshd_config                                             #
+# in a very limited time. Please consult with author before making further #
+# changes to this.                                                         #
+# Author: bkaskar                                                          #
+# Config: /etc/sysctl.d/*.conf                                             #
 ############################################################################
 
 SCTL="/etc/sysctl.d/99-sysctl.conf"
@@ -43,4 +43,6 @@ if [ -L ${SCTL} ]; then
   done
 fi
 
-# Fix REDBleed warning
+# Fix REDBleed warning for VM Image
+sed -i -e "s/^\(GRUB_.*DEFAULT=\"quiet\)/\1   retbleed=off/" /etc/default/grub && \
+update-grub2 

@@ -1,12 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #########################################################################
 #                     ~- Debian 11 baseline hardening -~                #
 # Assumption is that 01.download_pwqual_dict.sh copied H0bo dictionary  #
 # under /usr/share/dict, other PAM related tweaks can be run separately # 
 # But having it done all at once keeps password related items together. # 
 # Thus if dict check fails, the whole thing fails.                      #
-# Part of D116 baseline hardening guide by Bhaskar Roy, Rick Torres Jr. #
-# Author: broy@ibm.com                                                  #
+# Part of D116 baseline hardening guide by bkaskar                      #
+# Author: bkaskar                                                       #
 #########################################################################
 
 D=" Done!"

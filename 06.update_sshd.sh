@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ############################################################################
 #                   ~- Debian 11 baseline hardening -~                     #
 # Update SSHD configuration and add strong MAC and Ciphers as part of D116 #
-# baseline hardening guide by Bhaskar Roy, Rick Torres Jr.                 #
+# baseline hardening guide by bkaskar                                      #
 # Why this was created, there are plenty available in guthub.com?          #
 # Requirement is to listen to just one IP (internal preferably).           #
 # Also, other examples copy over existing sshd_config, whereas this script #
@@ -11,7 +11,7 @@
 # brought over they will remain, but the settings you want to restrict will#
 # be controlled through this even if anything is added additionally.       #
 #                                                                          #
-# Author: broy@ibm.com                                                     #
+# Author: bkaskar                                                          #
 # Config: /etc/ssh/sshd_config                                             #
 ############################################################################
 

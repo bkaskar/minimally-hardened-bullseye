@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #########################################################################
 #                     ~- Debian 11 baseline hardening -~                #
 # This script installs firewall and lynis to audit the system as part   #
-# of D116 baseline hardening guide by Bhaskar Roy, Rick Torres Jr.      #
-# Author: broy@ibm.com                                                  #
+# of D116 baseline hardening guide by bkaskar                           #
+# Author: bkaskar                                                       #
 #########################################################################
 
 if [ "$EUID" -ne 0 ]

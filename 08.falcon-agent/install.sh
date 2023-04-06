@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#############################
+#  I N S T A L L    E D R   #
+#############################
 
 INSTALLBIN="ww-falcon-sensor-amd64.deb";
 

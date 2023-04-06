@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #########################################################################
 #                     ~- Debian 11 baseline hardening -~                #
 # This is just some of the basic modules and may need further fine tune #
 # You may even have to remove some of these if the systems is being bu- #
 # ilt for some specific purpose were you would need say udf or psnap    #
-# Part of D116 baseline hardening guide by Bhaskar Roy, Rick Torres Jr. #
-# Author: broy@ibm.com                                                  #
+# Part of D116 baseline hardening guide by bkaskar                      #
+# Author: bkaskar                                                       #
 #                                                                       #
 # Note: llc fakeinstall is disbled because docker install failed with:  #   
 # msg="Running modprobe bridge br_netfilter failed with message:
